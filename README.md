@@ -23,6 +23,19 @@ With `bufenc` you can exactly to this, with simply calling to easy to use functi
 ## Used libraries
 !TBD!
 
+## Development
+
+### Scripts
+* QA: `npx roboter qa`
+* QA without license check: `npx roboter analyze && npx roboter test && npx roboter deps`
+* Tests only: `npx roboter test`
+* Build: `npx roboter build`
+
+### Github Actions
+* qa: Runs on any pull-request and executes a `QA without license check`. Can also be run manually.
+* release: Runs on pushes to `main` branch (except for tagging pushes) and publishes a new version of this package. \
+  Version number must be increased correctly, before.
+
 ## License
 This project is MIT License \
 See [LICENSE.txt](./LICENSE.txt)
